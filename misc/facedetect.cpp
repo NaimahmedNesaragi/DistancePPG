@@ -1,3 +1,5 @@
+// This program detects faces in an image
+
 // Importing Requisite Headers
 
 #include <opencv2/imgproc.hpp> 
@@ -7,7 +9,7 @@
 #include <chrono>
 #include <iostream>
 
-cv::String face_cascade_name = "/home/nambirajan/Downloads/Softwares/opencv-3.4.3/data/haarcascades/haarcascade_frontalface_alt.xml";
+cv::String face_cascade_name = "/Users/$USER/opencv-3.4.3/data/haarcascades/haarcascade_frontalface_alt.xml";
 
 
 int main(int argc, char *argv[]){
@@ -44,7 +46,7 @@ int main(int argc, char *argv[]){
 			std::cout << "Frame Rate: " << 1000.0/elapsed.count() << std::endl;
 
 
-			if (cv::waitKey(30) >=0)
+			if (cv::waitKey(3)>=0)
 				break;
 		}
 
